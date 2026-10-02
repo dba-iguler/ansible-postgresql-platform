@@ -1,0 +1,12 @@
+---
+- name: Install PostgreSQL packages
+  apt:
+    name:
+      - postgresql
+      - postgresql-contrib
+    state: present
+
+- name: Ensure PostgreSQL service is enabled
+  service:
+    name: postgresql
+    enabled: true
