@@ -1,0 +1,12 @@
+---
+- name: Install etcd
+  apt:
+    name:
+      - etcd-server
+      - etcd-client
+    state: present
+
+- name: Ensure etcd service is enabled
+  service:
+    name: etcd
+    enabled: true
