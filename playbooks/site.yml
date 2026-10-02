@@ -1,0 +1,8 @@
+---
+- name: Configure PostgreSQL platform
+  hosts: postgres
+  become: true
+
+  roles:
+    - common
+    - postgres
