@@ -8,3 +8,5 @@
     - postgres
     - etcd
     - patroni
+    - haproxy
+    - pgbouncer
