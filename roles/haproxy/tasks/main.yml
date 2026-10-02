@@ -1,0 +1,10 @@
+---
+- name: Install HAProxy
+  apt:
+    name: haproxy
+    state: present
+
+- name: Ensure HAProxy service is enabled
+  service:
+    name: haproxy
+    enabled: true
