@@ -1,0 +1,10 @@
+---
+- name: Install PgBouncer
+  apt:
+    name: pgbouncer
+    state: present
+
+- name: Ensure PgBouncer service is enabled
+  service:
+    name: pgbouncer
+    enabled: true
